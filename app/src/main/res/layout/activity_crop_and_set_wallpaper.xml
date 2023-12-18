@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#181818"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+        <com.theartofdev.edmodo.cropper.CropImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#181818"
+            app:cropAutoZoomEnabled="true" />
+    </FrameLayout>
+
+    <com.joaquimley.faboptions.FabOptions
+        android:id="@+id/fab_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:visibility="invisible"
+        app:button_menu="@menu/crop_fab_menu" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_editing_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <FrameLayout
+            android:id="@+id/seek_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/blur_seek_bar_layout" />
+
+            <include layout="@layout/greyscale_seek_bar_layout" />
+
+            <include layout="@layout/flip_controls_layout" />
+
+        </FrameLayout>
+        <!-- Bottom Editing Toolbar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_editing_toolbar_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/seek_bar_container"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="0dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="true"
+                android:scrollbarSize="2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/apply_wallpaper_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:padding="15dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        app:srcCompat="@drawable/ic_format_paint_white_24dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@color/activeTab" />
+
+                    <ImageView
+                        android:id="@+id/blur_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_blur_on_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/greyscale_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_color_lens_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/aspect_ratio_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="?selectableItemBackground"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_aspect_ratio_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/rotate_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="?selectableItemBackground"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_rotate_90_degrees_ccw_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/flip_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_flip_white_24dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="8dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:fontFamily="@font/spacemono_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/activeTab"
+            android:text="Loading image. Please wait."/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main_wallpapers">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground">
+
+        <LinearLayout
+            android:id="@+id/extra_content_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/extra_content_loading_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:id="@+id/image_extra_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/subText"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Powered by Unsplash.com"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/story_heading"
+                    style="@style/headingText"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="By Marques Brownlee"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/story_body"
+                    style="@style/subText"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/story_heading"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="It's really tough for a new company to attack the modular smartphone concept again without third party support. But I admire the ambition! Feeling a rant incoming today, and this one’s long overdue. It's really tough for a new company to attack the modular smartphone concept again without third party support. But I admire the ambition! Feeling a rant incoming today, and this one’s long overdue."
+                    android:textColor="@color/subTextColor"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="24dp"
+                    android:alpha="0.2"
+                    android:background="@color/subTextColor" />
+
+                <include layout="@layout/layout_exif" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:alpha="0.2"
+                    android:background="@color/subTextColor" />
+
+                <TextView
+                    android:id="@+id/related_tags_heading"
+                    style="@style/headingText"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="RELATED TAGS"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Motivation"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Life"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Technology"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="nice"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:alpha="0.2"
+                    android:background="@color/subTextColor"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/headingText"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="RELATED COLLECTIONS"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Motivation"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Life"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="Technology"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/subText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_chip"
+                        android:gravity="center"
+                        android:text="nice"
+                        android:textColor="@color/subTextColor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

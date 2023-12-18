@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fab_option_flip_vertical"
+        android:icon="@drawable/ic_swap_vert_white_24dp"
+        android:title="Flip Vertically" />
+
+    <item
+        android:id="@+id/fab_option_flip_horizontal"
+        android:icon="@drawable/ic_swap_horiz_white_24dp"
+        android:title="Flip Horizontally" />
+
+    <item
+        android:id="@+id/fab_option_aspect_ratio"
+        android:icon="@drawable/ic_aspect_ratio_white_24dp"
+        android:title="Crop Size" />
+
+    <item
+        android:id="@+id/fab_option_apply_crop"
+        android:icon="@drawable/ic_done_white_24dp"
+        android:title="Apply Wallpaper" />
+
+    <item
+        android:id="@+id/fab_option_rotate_left"
+        android:icon="@drawable/crop_image_menu_rotate_left"
+        android:title="Rotate Left" />
+
+    <item
+        android:id="@+id/fab_option_rotate_right"
+        android:icon="@drawable/crop_image_menu_rotate_right"
+        android:title="Rotate Right" />
+</menu>

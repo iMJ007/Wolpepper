@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color><!-- #212121 -->
+    <color name="colorPrimaryDark">#1a1a1a</color> <!-- 1a1a1a -->
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="activeTab">#BDBDBD</color>
+    <color name="inactiveTab">#757575</color>
+
+    <color name="textColor">#fafafa</color>
+
+    <color name="colorMiniFab">#424242</color>
+
+    <color name="colorStatusBar">#66212121</color>
+
+    <color name="colorBackground">#181818</color>
+
+    <color name="subTextColor">#7b7b83</color>
+
+    <color name="colorIconTint">#CC212121</color>
+
+    <color name="colorIconDarkTint">#0277BD</color>
+
+    <color name="statusBar">#33212121</color>
+
+    <color name="wallpaperRowTint">#68000000</color>
+
+    <color name="collectionHeaderTint">#99000000</color>
+
+    <color name="sectionIndicator">#66757575</color>
+
+    <color name="colorSeleted">#03A9F4</color>
+
+    <color name="colorUnselected">#212121</color>
+
+    <color name="widgetColor">#414141</color>
+
+    <color name="editing_controls_background">#DD212121</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange_bright">#ff8e48</color>
+
+    <!-- WIDGET CARD DRAWABLE COLOR -->
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#212121</color>
+    <color name="card_shadow_1">#1a1a1a</color>
+    <color name="card_shadow_2">#551a1a1a</color>
+    <color name="card_detailing">#eee</color>
+
+
+    <!--&lt;!&ndash; WIDGET CARD DRAWABLE COLOR &ndash;&gt;-->
+    <!--<color name="transparent">#00000000</color>-->
+    <!--&lt;!&ndash; card colors &ndash;&gt;-->
+    <!--<color name="card_background">#ffffff</color>-->
+    <!--<color name="card_shadow_1">#d4d4d4</color>-->
+    <!--<color name="card_shadow_2">#dddddd</color>-->
+    <!--<color name="card_detailing">#eee</color>-->
+
+</resources>

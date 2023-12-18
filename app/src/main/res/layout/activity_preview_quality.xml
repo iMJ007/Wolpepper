@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.eclectik.wolpepper.activities.settingsActivities.PreviewQualityActivity">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wallpaper_row_root_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/preview_settings_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/cardview_dark_background" />
+
+            <ImageView
+                android:id="@+id/image_orientation_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:padding="15dp"
+                android:src="@drawable/ic_stay_current_portrait_black_24dp"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/hide_reveal_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_info_outline_white_24dp" />
+
+            <LinearLayout
+                android:id="@+id/updating_image_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/wallpaperRowTint"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:fontFamily="@font/spacemono_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Working"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallpaper_row_root_card"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/spacemono_regular"
+            android:id="@+id/quality_percent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quality_percent_display"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/preview_quality_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/spacemono_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="@string/preview_quality_note"
+        android:background="@color/wallpaperRowTint"
+        android:textColor="@color/textColor"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+</RelativeLayout>

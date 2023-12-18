@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eclectik.wolpepper.activities.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/AppToolbar"
+                android:background="@drawable/toolbar_gradient"
+                android:layerType="software"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_display_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frag_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimary"
+        app:menu="@menu/bottom_menu"
+
+        app:itemIconTint="@color/icon_state_color"
+        app:itemTextColor="@color/icon_state_color"
+        app:elevation="16dp"
+        app:itemTextAppearanceActive="@style/MyCustomTabsTextAppearance"
+        app:itemTextAppearanceInactive="@style/MyCustomTabsTextAppearance"/>
+
+<!--    <com.roughike.bottombar.BottomBar-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:visibility="invisible"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        app:bb_titleTextAppearance="@style/MyCustomTabsTextAppearance"-->
+<!--        app:bb_activeTabColor="@color/activeTab"-->
+<!--        app:bb_inActiveTabColor="@color/inactiveTab"-->
+<!--        app:bb_tabXmlResource="@xml/bottombar_tabs" />-->
+
+    <FrameLayout
+        android:id="@+id/login_data_loading_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/collectionHeaderTint"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

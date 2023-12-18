@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context="com.eclectik.wolpepper.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/collection_header_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@color/colorStatusBar"
+                    android:scaleType="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/collectionHeaderTint"/>
+                <!--This view will be set to Gone if collection description does not exist-->
+                <TextView
+                    android:textSize="12sp"
+                    style="@style/subText"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:id="@+id/collection_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Having the sample project installed is a good way to be notified of new releases. Although Watching this repository will allow GitHub to email you whenever I publish a release." />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:elevation="0dp"
+                android:layout_gravity="bottom"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_profile_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:fontFamily="@font/spacemono_bold"
+                        style="@style/headingText"
+                        android:id="@+id/collection_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nature Vature" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        style="@style/subText"
+                        android:fontFamily="@font/spacemono_regular"
+                        android:id="@+id/collection_user_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By MJ" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <include layout="@layout/layout_collection_fabs"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--Add a Recycler View here, and use wallpapers_row for single views-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collection_photos_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <!--THIS IS MORE LOADING PROGRESS BAR -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/more_loader"
+        android:visibility="visible"
+        android:background="@drawable/circle_shape">
+        <ProgressBar
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="2dp"
+            />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

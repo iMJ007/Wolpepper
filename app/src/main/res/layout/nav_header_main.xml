@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!-- Login related layouts in this relative layout -->
+    <RelativeLayout
+        android:id="@+id/login_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <!-- login button layout start -->
+        <LinearLayout
+            android:id="@+id/login_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/headingText"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/subText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Use your Unsplash account to sign in"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- login button layout end -->
+
+        <!-- signed in state/user details layout start -->
+        <LinearLayout
+            android:id="@+id/signed_in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_of_user_tv"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="userName"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/log_out_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_remove_circle_outline_white_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="Email:"
+                android:textColor="@color/subTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:fontFamily="@font/spacemono_regular"
+                android:id="@+id/user_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- signed in state/user details layout end -->
+    </RelativeLayout>
+
+    <!-- for some reason view tag crashes app here -->
+    <ImageView
+        android:id="@+id/header_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/login_root_layout"/>
+
+    <!-- all settings list here -->
+    <com.diegodobelo.expandingview.ExpandingList
+        android:id="@+id/expanding_list_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_divider"/>
+</RelativeLayout>

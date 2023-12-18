@@ -1,0 +1,313 @@
+<resources>
+    <string name="app_name" translatable="false">Wolpepper</string>
+    <string name="app_display_name" translatable="false">Wol:Pepper</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string> <!-- It was translatable false -->
+    <string name="action_orientation_only_portrait">Only Portrait</string>
+
+    <string name="color_select">Select a Color</string>
+
+    <!-- Activity names -->
+    <string name="about_activity_title">About</string>
+    <string name="title_activity_main_wallpapers">MainWallpapersActivity</string>
+    <string name="title_upgrade_app_activity">Upgrade App</string>
+
+    <!-- FIREBASE STRINGS -->
+    <string name="app_keys" translatable="false">keys</string>
+    <string name="app_id_key" translatable="false">AppId</string>
+    <string name="app_secret" translatable="false">AppSecret</string>
+    <string name="napi_auth_key" translatable="false">NapiAuthKey</string>
+
+    <!-- ALERT STRINGS -->
+    <string name="connection_error">Connection Error!</string>
+    <string name="connection_error_description">Unable to connect to server. Please check your network connection and Click to Try Again!</string>
+    <string name="something_went_wrong_error">Oops!!!</string>
+    <string name="something_went_wrong_description">Something went wrong. Please try again.</string>
+    <string name="no_collection_desc">This user have no collections.</string>
+    <string name="no_liked_images_desc">No photos have been liked.</string>
+    <string name="no_photos_uploaded">No photos have been uploaded by this user.</string>
+    <string name="collection_cant_download">Uh-oh!</string>
+    <string name="collection_cant_download_desc">Download full collection is only available for curated collections</string>
+    <string name="already_downloading_title">Hey There!!!</string>
+    <string name="image_already_downloading_desc_1">Image of\u0020</string>
+    <string name="image_already_downloading_desc_2">\u0020with ID:\u0020</string>
+    <string name="image_already_downloading_desc_3">\u0020is already downloading.</string>
+    <string name="image_already_exist_desc_1">Image of\u0020</string>
+    <string name="image_already_exist_desc_2">\u0020with ID:\u0020</string>
+    <string name="image_already_exist_desc_3">\u0020already exist on storage.</string>
+    <string name="collection_already_downloading_desc_1">The\u0020</string>
+    <string name="collection_already_downloading_desc_2">\u0020is already downloading.</string>
+    <string name="collection_already_exist_desc_1">The\u0020</string>
+    <string name="collection_already_exist_desc_2">\u0020already exists on your storage.</string>
+    <string name="login_failed_title">Login failed!</string>
+    <string name="login_failed_desc">Unable to login. Please check your connection and try again later.</string>
+    <string name="download_start_title">Downloading…</string>
+    <string name="set_wallpaper_desc">Image will be set as wallpaper when download is finished!</string>
+    <string name="set_random_wallpaper_desc">A random image will be set as wallpaper when download is finished! You can keep browsing.</string>
+    <string name="grey_scale_title">Grayscale</string>
+    <string name="grey_scale_desc">Image will be downloaded in grayscale!</string>
+    <string name="sign_in_to_like_title">Hey There!</string>
+    <string name="sign_in_to_like_desc">Sign In to like an image</string>
+    <string name="wolpepper_already_downloading">This Wol:Pepper is downloading.</string>
+    <string name="share_image_already_downloading_desc">Current image is already downloading try sharing after download finishes.</string>
+    <string name="set_as_intent_already_downloading_desc">A wallpaper operation is being carried out. Please wait till it finishes.</string>
+    <string name="share_image_alert_desc">Share menu will appear as soon as the image is downloaded successfully. "Even if you leave the app".</string>
+    <string name="set_as_intent_alert_desc">\"Set As\" menu will appear as soon as the image is downloaded successfully. "Even if you leave the app".</string>
+    <string name="folder_create_error">Unable to create folder "Wol:Peppers". Try Again.</string>
+    <string name="solid_color_save_title">Awesome!</string>
+    <string name="solid_color_save_desc">This wallpaper has been saved</string>
+    <string name="solid_color_set_desc">This wallpaper has been set</string>
+    <string name="preview_quality_error_title">Hey There!</string>
+    <string name="preview_quality_error_desc">Minimum 5% quality allowed!</string>
+
+    <!-- Intent related strings -->
+    <string name="share_image_title">Share Wol:Pepper with :</string>
+    <string name="share_image_subject">Wolpepper</string>
+    <string name="share_image_text">Image By :\u0020</string>
+    <string name="shared_via_wolpepper">Shared via Wolpepper!</string>
+
+    <!-- USER DETAILS PREFERENCES KEYs -->
+    <string name="user_base_preference_key" translatable="false">user_prefs</string>
+    <string name="access_token" translatable="false">token</string>
+    <string name="is_user_logged_in" translatable="false">is_user_logged_in</string>
+    <string name="user_json" translatable="false">user_json</string>
+
+    <!-- MUZEI PREFERENCE KEYS -->
+    <string name="muzei_active_list_base_prefs_key" translatable="false">muzei_active_list_pref</string>
+    <string name="muzei_image_id_base_prefs_key" translatable="false">muzei_image_id_pref</string>
+    <string name="muzei_image_author_base_prefs_key" translatable="false">muzei_author_name_pref</string>
+    <string name="muzei_image_date_base_pref_key" translatable="false">muzei_date_pref</string>
+    <string name="muzei_image_download_links" translatable="false">muzei_download_link_pref</string>
+    <string name="maximum_allowed_image_per_list" translatable="false">20</string>
+    <string name="maximum_allowed_lists" translatable="false">2</string>
+    <string name="muzei_active_list_key" translatable="false">muzei_active_list</string>
+    <string name="muzei_refresh_interval_pref_base_key" translatable="false">refresh_interval_base_key</string>
+    <string name="muzei_refresh_interval_pref_key" translatable="false">refresh_interval_key</string>
+
+    <!-- Muzei Dialog Key -->
+    <string name="muzei_create_list_title">Muzei List</string>
+    <string name="muzei_create_first_list_desc">Name your very first Muzei active wallpaper list.</string>
+    <string name="muzei_select_as_source_note">Note : Tap here to open Muzei and Select Wolpepper as source or to get it from PlayStore. </string>
+    <string name="muzei_create_list_desc">Name the list!</string>
+    <string name="list_name_hint">List Name</string>
+    <string name="list_created_toast_text">\u0020List created.</string>
+    <string name="muzei_name_already_exist_title">List name exist</string>
+    <string name="muzei_name_already_exist_desc">The list with given name already exist try another name.</string>
+    <string name="muzei_image_added_to_active_list">Image added to active Muzei list</string>
+    <string name="muzei_image_removed_from_list">Image removed from active Muzei list</string>
+    <string name="muzei_image_added_to_selected_list">Image added to selected Muzei list</string>
+    <string name="muzei_image_removed_from_selected_list">Image removed from selected Muzei list</string>
+    <string name="maximum_image_in_list_reached_title">Oops!</string>
+    <string name="maximum_image_in_list_reached_desc">Maximum images allowed in a list reached (20). Consider buying in-App extension to get Unlimited images in a list.</string>
+    <string name="maximum_list_reached_desc">Maximum list allowed reached (2). Consider buying in-App extension to get Unlimited List count.</string>
+    <string name="muzei_image_already_exist_in_list_desc">This image already exist in list.</string>
+    <string name="muzei_select_list_to_add_wallpaper_to">Select List</string>
+    <string name="muzei_this_list_will_used_now_title">Activated</string>
+    <string name="muzei_this_list_will_used_now">Selected list will be used from next refresh.</string>
+    <string name="muzei_are_you_sure_to_delete_list">Are you sure, delete the selected list?</string>
+    <string name="muzei_swipe_to_delete_notification">Swipe to delete an image from this list.</string>
+    <string name="image_deleted_from_list">Image deleted from this list.</string>
+    <string name="muzei_list_deleted">\u0020list deleted!</string>
+
+
+    <!-- DIALOG KEY -->
+    <string name="cancel_button">Cancel</string>
+    <string name="create_new_list">Create new</string>
+
+
+    <!-- Placeholder Strings -->
+    <string name="unknown_value" translatable="false">Unknown</string>
+    <string name="view_on_unsplash">View on Unsplash.com</string>
+    <string name="preview_quality_note">Use the seekbar to set the preview quality.\nNote: 1. Preview updates when you release seekbar. \n2. The higher the quality the slower your images will load in app. So try to keep a good balance between them based on your connectivity.</string>
+    <string name="quality_percent_display">Quality :\u0020</string>
+
+    <!-- com.eclectik.wolpepper.Muzei support -->
+    <string name="muzei_description">Awesome Wol:Peppers</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="refresh_interval_hint">Set Refresh Interval (Default: 3hrs)</string>
+    <string name="restart_app_to_see_effects">Restart app to apply settings completely.</string>
+    <string name="exit_without_saving">Discard Changes and leave?</string>
+    <string name="discard_changes">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="always_ask_image_type">Always ask</string>
+    <string name="raw_image_type">Raw</string>
+    <string name="jpeg_image_type">Jpeg</string>
+    <string name="current_default_string">Current : %1$s</string>
+    <string name="choose_default_image_format_dialog_title">Select format</string>
+    <string name="quick_set_wallpaper_nav_drawer_title">Quick Set Wallpaper</string>
+    <string name="storage_setting_nav_drawer_title">Storage Settings</string>
+    <string name="current_using_default_storage">Currently using default storage location</string>
+    <string name="current_using_custom_storage">Currently using custom storage location</string>
+    <string name="is_true">true</string>
+    <string name="is_false">false</string>
+
+    <!-- Settings Preferences -->
+    <string name="preview_quality_base_pref_key" translatable="false">preview_quality_base_pref_key</string>
+    <string name="preview_quality_percent_pref_key" translatable="false">preview_quality_percent</string>
+    <string name="default_image_format_base_pref_key" translatable="false">default_image_base_pref_key</string>
+    <string name="default_image_format_pref_key" translatable="false">default_image_pref_key</string>
+    <string name="quick_set_wallpaper_base_pref" translatable="false">quick_set_wallpaper_base_pref</string>
+    <string name="quick_set_wallpaper_pref" translatable="false">quick_set_wallpaper_pref</string>
+    <string name="storage_preference_base_key">storage_preference_base_key</string>
+    <string name="storage_type_pref_key" translatable="false">storage_type_pref_key</string> <!-- DEFAULTS OR CUSTOM -->
+    <string name="storage_custom_location_path_key" translatable="false">storage_custom_location_key</string>
+    <string name="storage_custom_location_uri_key" translatable="false">storage_custom_location_uri_key</string>
+
+    <!-- TODO enter your ADs KEYS -->
+    <string name="admob_app_id" translatable="false"></string>
+    <string name="rewarded_ad_unit_id" translatable="false"></string>
+    <string name="interstitial_unit_id" translatable="false"></string>
+    <string name="solid_interstitial_unit_id" translatable="false"></string>
+    <string name="main_list_unit_id" translatable="false"></string>
+
+    <!-- Tap Target View Strings -->
+    <string name="info_button_tap_target_title">Information Button</string>
+    <string name="info_button_tap_target_desc">Click this to view quick access controls.</string>
+    <string name="orientation_image_tap_target_title">Wallpaper Orientation</string>
+    <string name="orientation_image_tap_target_desc">This indicates the orientation of the respective wallpaper.</string>
+    <string name="muzei_button_tap_target_title">Add to Muzei</string>
+    <string name="muzei_button_tap_target_desc">Press to add wallpaper to currently active Muzei list if available otherwise create list.\nLong press to create or add to another muzei list.</string>
+    <string name="grayscale_button_tap_target_title">Grey Scale</string>
+    <string name="grayscale_button_tap_target_desc">Use this to download/set the wallpaper in grayscale.</string>
+    <string name="apply_wallpaper_fab_tap_target_title">Set Wallpaper</string>
+    <string name="apply_wallpaper_fab_tap_target_desc">Press to download and set image as wallpaper or long press this button to use "Set As" option.\nNote: The Set As menu will appear after the image is downloaded.</string>
+    <string name="download_button_tap_target_title">Download</string>
+    <string name="download_button_tap_target_desc">Use this to download and save Image on your storage and use it for anything.\n\nNote : You can set a default format of image to download in settings.</string>
+
+    <!-- Settings-->
+    <string name="share_wolpepper">Share Wol:Pepper</string>
+    <string name="share_text">Share Wol:Pepper with all the amazing humans you know</string>
+    <string name="join_eclectik_community">Telegram Group</string>
+    <string name="googletext">Join our Google+ Community for latest update news and also help us build better apps.</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="communitytext">We love to hear from our users, send us whatever thoughts or suggestions you have about the app.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="polciy_desc">Our Privacy Policy explains how we use, share and protect information in relation to our mobile services and your choices about the collection and use of your information.</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="this_will_delete_everything_related_to_wolpepper">This will delete everything related to Wol:Pepper</string>
+    <string name="alert_text">This will delete all your saved words from our database and delete everything related to your account. Are you sure about it?</string>
+    <string name="manage_the_behaviour_of_the_widget">Manage the behaviour of the widget.</string>
+    <string name="widget_settings">Widget Settings</string>
+    <string name="other_apps">Other Apps</string>
+    <string name="checkout_other_apps_developed_by_us">Checkout other apps developed by us</string>
+    <string name="select_string">Select</string>
+    <string name="let_me_recommend_app">\nLet me recommend you this application\n\n</string>
+    <string name="solid_color_title">Solid Colors</string>
+    <string name="solid_color_desc">Set a color as wallpaper</string>
+    <string name="gradient_color_title">Gradient Colors</string>
+    <string name="gradient_color_desc">Set a gradient as Wallpaper</string>
+    <string name="other_wallpapers_title">Other Wallpapers</string>
+    <string name="other_wallpapers_desc">Set a color or gradient as Wallpaper</string>
+    <string name="storage_path_string">Path: %1$s</string>
+
+    <!-- Side Nav Expanding List Strings -->
+    <string name="side_nave_orientation_filter_title">Orientation Filter</string>
+    <string name="side_nave_orientation_filter_subtitle">Filter images based on orientation</string>
+    <string name="portrait_only">Portrait Only</string>
+    <string name="landscape">Landscape</string>
+    <string name="side_nav_settings_subtitle">Wol:Pepper Settings</string>
+    <string name="muzei_setting">Muzei Settings</string>
+    <string name="preview_quality">Preview Quality</string>
+    <string name="download_image_format">Download Format</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+    <string name="miscellaneous_desc">Miscellaneous options.</string>
+    <string name="upgrade_app_title">Upgrade</string>
+
+    <!-- License and Credits -->
+    <string name="unsplash_credits_desc" translatable="false">All wallpapers that you see in this application are from Unsplash.com.\nWolpepper uses API from Unsplash.com</string>
+    <string name="glide_image_library" translatable="false">Glide Image Library</string>
+    <string name="ROBOTO_credits" translatable="false">Space Mono is an original fixed-width type family designed by Colophon Foundry for Google Design. It supports a Latin Extended glyph set, enabling typesetting for English and other Western European languages.</string>
+    <string name="licenses_and_credits" translatable="false">Licenses and Credits</string>
+    <string name="firebase" translatable="false">Firebase</string>
+    <string name="google" translatable="false">Google+</string>
+    <string name="link" translatable="false">Link</string>
+    <string name="firebase_credits" translatable="false">Firebase distributes open source software with real-time clients and SDKs.</string>
+    <string name="glide_credits" translatable="false">Copyright 2012 Jake Wharton</string>
+    <string name="circular_credits" translatable="false">A circular ImageView for Android.\nCopyright 2014 - 2017 Henning Dodenhof</string>
+    <string name="circularimageview" translatable="false">CircleImageView</string>
+    <string name="roboto_slab" translatable="false">Space Mono</string>
+    <string name="android_image_cropper_title" translatable="false">Android Image Cropper</string>
+    <string name="android_image_cropper_license_link" translatable="false">https://github.com/ArthurHub/Android-Image-Cropper/blob/master/LICENSE.txt</string>
+    <string name="android_image_cropper_desc" translatable="false">Image Cropping Library for Android, optimized for Camera/Gallery.\nCopyright 2016, Arthur Teplitzki, 2013, Edmodo, Inc.</string>
+    <string name="alerter_library_title" translatable="false">Alerter</string>
+    <string name="alerter_library_desc" translatable="false">An Android Alerting Library.\nCopyright 2016 Tapadoo, Dublin.</string>
+    <string name="alerter_library_link" translatable="false">https://github.com/Tapadoo/Alerter/blob/master/LICENSE.md</string>
+    <string name="blurry_library_title" translatable="false">Blurry</string>
+    <string name="blurry_library_desc" translatable="false">Blurry is an easy blur library for Android.\nCopyright 2017 Wasabeef</string>
+    <string name="blury_library_link" translatable="false">https://github.com/wasabeef/Blurry/blob/master/LICENSE</string>
+    <string name="fab_options_library_title" translatable="false">FabOptions</string>
+    <string name="fab_options_library_desc" translatable="false">A multi-functional FAB component with customizable options.\nCopyright © 2016 Joaquim Ley</string>
+    <string name="fab_options_library_license_link" translatable="false">https://github.com/JoaquimLey/faboptions/blob/development/LICENSE</string>
+    <string name="tap_target_view_library_title" translatable="false">TapTargetView</string>
+    <string name="tap_target_view_library_desc" translatable="false">An implementation of tap targets from the Material Design guidelines for feature discovery.\nCopyright 2016 Keepsafe Software Inc.</string>
+    <string name="tap_target_view_library_link" translatable="false">https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE</string>
+    <string name="photo_view_library_title" translatable="false">PhotoView</string>
+    <string name="photo_view_library_desc" translatable="false">Implementation of ImageView for Android that supports zooming, by various touch gestures.\nCopyright 2017 Chris Banes</string>
+    <string name="photo_view_library_link" translatable="false">https://github.com/chrisbanes/PhotoView/blob/master/LICENSE</string>
+    <string name="muzei_library_title" translatable="false">Muzei</string>
+    <string name="muzei_library_desc" translatable="false">Muzei Live Wallpaper for Android</string>
+    <string name="muzei_library_link" translatable="false">https://github.com/romannurik/muzei/blob/master/LICENSE</string>
+    <string name="android_view_animation_library_title" translatable="false">AndroidViewAnimations</string>
+    <string name="android_view_animation_library_desc" translatable="false">Cute view animation collection.\nCopyright daimajia</string>
+    <string name="android_view_animation_library_link" translatable="false">https://github.com/daimajia/AndroidViewAnimations/blob/master/License</string>
+    <string name="revealator_library_title" translatable="false">Android Revealator</string>
+    <string name="revealator_library_desc" translatable="false">An helper to circle reveal/unreveal a view easily, with translations and childs animations.</string>
+    <string name="revealator_library_link" translatable="false">https://github.com/Jaouan/Revealator/blob/master/LICENSE</string>
+    <string name="bottom_bar_library_title" translatable="false">BottomBar</string>
+    <string name="bottom_bar_library_desc" translatable="false">A custom view component that mimics the new Material Design Bottom Navigation pattern.\nCopyright © 2016 Iiro Krankka (http://github.com/roughike).</string>
+    <string name="bottom_bar_library_link" translatable="false">https://github.com/roughike/BottomBar/blob/master/LICENSE</string>
+    <string name="material_dialogs_library_title" translatable="false">Material Dialogs</string>
+    <string name="material_dialogs_library_desc" translatable="false">A beautiful, fluid, and customizable dialogs API.\nCopyright © 2014–2016 Aidan Michael Follestad</string>
+    <string name="material_dialogs_library_link" translatable="false">https://github.com/afollestad/material-dialogs/blob/master/LICENSE.txt</string>
+    <string name="square_loader_library_title" translatable="false">SquareLoading</string>
+    <string name="square_loader_library_desc" translatable="false">A square animated loader.\nCopyright © 2016 yuweiguocn</string>
+    <string name="square_loader_library_link" translatable="false">https://github.com/yuweiguocn/SquareLoading</string>
+    <string name="okhttp_library_title" translatable="false">OKHTTP</string>
+    <string name="okhttp_library_desc" translatable="false">An HTTP+HTTP/2 client for Android and Java applications.</string>
+    <string name="okhttp_library_link" translatable="false">https://github.com/square/okhttp/blob/master/LICENSE.txt</string>
+    <string name="diagonal_layout_library_title" translatable="false">DiagonalLayout</string>
+    <string name="diagonal_layout_library_desc" translatable="false">Explore new styles and approaches on material design.\nCopyright 2016 florent37, Inc.</string>
+    <string name="diagonal_layout_library_link" translatable="false">https://github.com/florent37/DiagonalLayout/blob/master/LICENSE</string>
+    <string name="expanding_view_library_title" translatable="false">Android Expanding View</string>
+    <string name="expanding_view_library_desc" translatable="false">This is a library to help creating expanding views with animation in Android.</string>
+    <string name="expanding_view_library_link" translatable="false">https://github.com/diegodobelo/AndroidExpandingViewLibrary\nCopyright © 2016, Diego Bezerra</string>
+
+    <!-- Devs -->
+    <string name="shahid_shaikh">Shahid Shaikh</string>
+    <string name="developers_eclectik">Eclectik Devs Team</string>
+    <string name="android_java_developer">Android, Java Developer</string>
+    <string name="junaid_gandhi">M.Junaid Gandhi</string>
+    <string name="android_developer_and_designer">Android Developer and Designer</string>
+    <string name="about_desc">Wol:Pepper was created to set a standard in wallpaper application. Wol:Pepper follows a simple easy to use UI but never compromises on the quality of wallpapers.\n\nEvery wallpaper you see in this application are from Unsplash.com\n\nWolpepper allows you to have 2 versions of each wallpaper, either grayscale or colored. You can also rotate, flip and do many other things on them while setting them as wallpaper. You decide what you want.\n\nFeel free to send your feedback to us, if you love the app make sure to rate this app it will really help us. Join our Google plus community to know more about our upcoming/existing projects and updates. \n\nThank you!\n\nKeep Peppering your walls.</string>
+    <string name="because_quality_matters">Because Quality Matters</string>
+    <string name="intro_screen_two_desc">Wolpepper makes use of API from Unsplash.com. The app also adds many features including grey scaling images, muzei integration and many more.\nEnjoy!</string>
+
+    <!-- Changelog dialog and screen -->
+    <string name="changelog_dialog_base_pref_key" translatable="false">changelog_dialog_base_pref_key</string>
+    <string name="whats_new_title">What\'s new</string>
+    <string name="changelog_desc_version">Version 2.0.9.8: \n\n&#8226; Fixed Muzei Support. \n\n&#8226; Fixed Muzei Settings activity not launching from Muzei Sources screen. \n\n&#8226; Fixed crash on collection screen. \n\n&#8226; Code changes to adhere to Unsplash\'s updated guidelines. \n\n&#8226; Other minor tweaks and changes.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="is_active_list_changed_pref">is_active_list_changed_pref</string>
+
+
+    <string name="set_wallpaper_intent_extra">set_wallpaper_intent_extra</string>
+
+    //Notification
+    <string name="channel_id">wolpepper_notification_channel</string>
+    <string name="channel_name">Wolpepper</string>
+    <string name="channel_description">Displays notification for various task performed in background.</string>
+    <string name="set_as_flag">set_as_flag</string>
+    <string name="grey_scale_identifier_intent_extra">grey_scale_identifier_intent_extra</string>
+    <string name="apply_wallpaper_already_running">A wallpaper is already being applied. Please wait and try again later.</string>
+    <string name="upgrade_app_desc">Get free premium for a day or upgrade permanently.</string>
+    <string name="website">Website</string>
+    <string name="purchased">Purchased</string>
+    <string name="buy">Buy</string>
+
+</resources>

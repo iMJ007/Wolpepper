@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.eclectik.wolpepper.activities.UpgradeAppActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/purchase_header" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/header"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:text="Premium Upgrade"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/subText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/spacemono_regular"
+                        android:text="Removes all the ads and unlocks unlimited muzei list."
+                        android:textColor="@color/subTextColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ad_free_buy_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subText"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:text="BUY"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/or_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/spacemono_bold"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="@color/textColor" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rewarded_ad_title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/spacemono_regular"
+                        android:text="Get premium upgrade for a day by watching an Ad!"
+                        android:textColor="@color/textColor" />
+
+
+                    <Button
+                        android:id="@+id/view_ad_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rewarded_ad_title_tv"
+                        android:layout_alignParentEnd="true"
+                        android:text="View Ad"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:layout_margin="8dp"/>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

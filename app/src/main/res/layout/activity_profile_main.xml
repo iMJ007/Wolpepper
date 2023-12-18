@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground"
+    tools:context="com.eclectik.wolpepper.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground"
+                android:fitsSystemWindows="true"
+                android:paddingBottom="12dp"
+                app:layout_scrollFlags="scroll"
+                tools:context="com.eclectik.wolpepper.ProfileActivity">
+
+                <com.github.florent37.diagonallayout.DiagonalLayout
+                    android:id="@+id/diagonal_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:fitsSystemWindows="true"
+                    app:diagonal_angle="20"
+                    app:diagonal_direction="left"
+                    app:diagonal_position="bottom"
+                    app:diagonal_handleMargins="true">
+
+
+                    <ImageView
+                        android:id="@+id/user_photos_header_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header3"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.25"
+                        android:background="#212121" />
+
+                    <TextView
+                        android:id="@+id/name_of_user_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Shahid Shaikh"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="105dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_location_on_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/location_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/spacemono_bold"
+                            android:text="LOCATION"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.github.florent37.diagonallayout.DiagonalLayout>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image_iv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignBottom="@id/diagonal_header"
+                    android:elevation="16dp"
+                    tools:src="@drawable/author_2"
+                    app:shapeAppearance="@style/circleImageView"
+                    android:padding="2dp"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/colorBackground"
+                    app:elevation="15dp" />
+
+                <TextView
+                    android:id="@+id/total_photos_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/diagonal_header"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="32dp"
+                    android:text="Photos"
+                    android:textColor="#3E3E3E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/total_photos_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:text="345"
+                    android:layout_below="@id/total_photos_title_tv"
+                    android:layout_alignLeft="@id/total_photos_title_tv"
+                    android:textColor="#3E3E3E"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/following_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:layout_below="@id/diagonal_header"
+                    android:layout_toLeftOf="@id/total_photos_title_tv"
+                    android:layout_marginRight="32dp"
+                    android:maxLines="1"
+                    android:text="Following"
+                    android:textColor="#3E3E3E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/following_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_below="@id/following_title_tv"
+                    android:layout_alignLeft="@id/following_title_tv"
+                    android:text="1.9K"
+                    android:textColor="#3E3E3E"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/followers_title_tv"
+                    android:layout_below="@id/diagonal_header"
+                    android:layout_toLeftOf="@id/following_title_tv"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:text="Followers"
+                    android:textColor="#3E3E3E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/followers_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/followers_title_tv"
+                    android:layout_alignLeft="@id/followers_title_tv"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:text="3.5K"
+                    android:textColor="#3E3E3E"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_bio_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_below="@id/followers_count_tv"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:textSize="13sp"
+                    android:text=""
+                    android:textColor="#717171"
+                    android:textIsSelectable="true" />
+
+                <LinearLayout
+                    android:id="@+id/profile_link_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_bio_tv"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_open_in_new_white_24dp"
+                        android:tint="#717171" />
+
+                    <TextView
+                        android:fontFamily="@font/spacemono_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="-5dp"
+                        android:text="@string/view_on_unsplash"
+                        android:textSize="13sp"
+                        android:textColor="#717171" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_profile" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

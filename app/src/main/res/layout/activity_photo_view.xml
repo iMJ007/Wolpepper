@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitCenter" />
+
+
+    <!--THIS IS MORE LOADING PROGRESS BAR -->
+    <RelativeLayout
+        android:id="@+id/more_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/progress_bar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape"
+            android:layout_centerHorizontal="true">
+
+            <ProgressBar
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="2dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/spacemono_regular"
+            android:id="@+id/loading_full_image_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/progress_bar_container"
+            android:text="Loading full image" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

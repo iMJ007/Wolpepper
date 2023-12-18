@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flip_controls_container"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/editing_controls_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/vertical_flip_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_swap_vert_white_24dp" />
+
+    <ImageView
+        android:id="@+id/horizontal_flip_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_swap_horiz_white_24dp" />
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.eclectik.wolpepper.activities.MainWallpapersActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/wallpaper_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:importantForAccessibility="no"
+                    android:transitionName="wallpaper" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/view_image_fullScreen_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="view on Unsplash"
+                    android:src="@drawable/ic_open_in_new_white_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/scrim" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="bottom"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:transitionName="profile_image"
+                    tools:src="@drawable/author_2"
+                    app:shapeAppearanceOverlay="@style/circleImageView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/profile_image"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/action_bar_author_name"
+                        style="@style/headingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/spacemono_bold"
+                        android:gravity="center"
+                        tools:text="Marques Brownlee"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/action_bar_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/spacemono_regular"
+                        android:gravity="center"
+                        tools:text="15th August, 2017"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_fab" />
+
+            <io.codetail.widget.RevealFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/the_awesome_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:visibility="invisible">
+
+
+                    <include layout="@layout/layout_stats" />
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/the_wonderful_button"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="-8dp"
+                        android:layout_marginTop="-8dp"
+                        android:padding="18dp"
+                        android:contentDescription="Close Stats"
+                        app:srcCompat="@drawable/ic_clear_white_24dp" />
+                </FrameLayout>
+
+            </io.codetail.widget.RevealFrameLayout>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_main_wallpapers" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_timeline_white_24dp"
+        android:contentDescription="View Stats"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorAccent"
+        app:tint="@null"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

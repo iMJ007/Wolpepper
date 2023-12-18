@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_solid_colors"
+            android:icon="@drawable/ic_color_lens_white_24dp"
+            android:title="Solid Colors" />
+
+        <!--<item
+            android:id="@+id/nav_our_selected"
+            android:icon="@drawable/ic_whatshot_white_24dp"
+            android:title="Handpicked By Us" />-->
+
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@drawable/ic_file_upload_white_24dp"
+            android:title="Upgrade" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/action_settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_white_24dp"
+            android:title="About" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:menuCategory="system"
+        android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/drawer_orientation"
+            android:icon="@drawable/ic_stay_current_portrait_black_24dp"
+            android:title="@string/action_orientation_only_portrait"
+            android:titleCondensed="Portrait">
+        </item>
+
+        <item
+            android:id="@+id/nav_aboutss"
+            android:icon="@drawable/ic_info_outline_white_24dp"
+            android:checkable="true"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_abouts"
+            android:icon="@drawable/ic_info_outline_white_24dp"
+            android:checkable="true"
+            android:title="About" />
+    </group>
+</menu>

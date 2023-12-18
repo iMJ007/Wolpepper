@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/linear_gradient_selector"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@color/blue" />
+
+            <ImageView
+                android:id="@+id/radial_gradient_selector"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@color/blue" />
+
+            <ImageView
+                android:id="@+id/sweep_gradient_selector"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@color/blue" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/dark_colors_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Colors"
+            android:fontFamily="@font/spacemono_regular"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/linear_gradient_config_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:visibility="gone">
+
+                <TextView
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gradient Orientation : "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioGroup
+                    android:id="@+id/linear_gradient_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <RadioButton
+                        android:fontFamily="@font/spacemono_regular"
+                        android:id="@+id/top_to_bottom_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top To Bottom"
+                        android:layout_marginBottom="12dp"
+                        app:buttonTint="@color/colorPrimaryDark"/>
+
+                    <RadioButton
+                        android:fontFamily="@font/spacemono_regular"
+                        android:id="@+id/left_to_right_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Left To Right"
+                        android:layout_marginBottom="12dp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <RadioButton
+                        android:fontFamily="@font/spacemono_regular"
+                        android:id="@+id/top_left_to_bottom_right_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Left To Bottom Right"
+                        android:layout_marginBottom="12dp"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                    <RadioButton
+                        android:fontFamily="@font/spacemono_regular"
+                        android:id="@+id/top_right_to_bottom_left_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Right To Bottom Left"
+                        app:buttonTint="@color/colorPrimaryDark" />
+
+                </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radial_gradient_config_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Set Radius:"/>
+
+            <SeekBar
+                android:fontFamily="@font/spacemono_regular"
+                android:id="@+id/gradient_radius_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:max="100"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collections_root_card"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/collection_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/cardview_dark_background"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/scrim"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            app:shapeAppearance="@style/circleImageView"
+            app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:fontFamily="@font/spacemono_bold"
+            android:id="@+id/collection_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collection Name"
+            android:textColor="@color/textColor"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_above="@id/collection_photo_count"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/collection_photo_count"
+            android:fontFamily="@font/spacemono_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photos Count"
+            android:textColor="@color/textColor"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

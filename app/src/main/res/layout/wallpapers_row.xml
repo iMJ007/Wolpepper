@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/wallpaper_row_root_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp">
+
+        <RelativeLayout
+            android:id="@+id/root_size_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/cardview_dark_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/scrim"
+                android:layerType="software" />
+
+            <RelativeLayout
+                android:id="@+id/hidden_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/wallpaperRowTint"
+                android:orientation="horizontal"
+                >
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_bold"
+                    android:gravity="center"
+                    tools:text="Author Name"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    android:layout_above="@id/date"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spacemono_regular"
+                    android:gravity="center"
+                    tools:text="15th August 2017"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+
+                <FrameLayout
+                    android:id="@+id/download_button_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/download_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/ic_arrow_downward_white_24dp" />
+
+                    <ProgressBar
+                        android:id="@+id/download_progress_bar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="18dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/like_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_toStartOf="@id/download_button_container"
+                    android:padding="18dp"
+                    android:tint="@color/textColor"
+                    app:srcCompat="@drawable/ic_favorite_border_white_24dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/add_to_muzei_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/download_button_container"
+                    android:padding="18dp"
+                    android:src="@drawable/ic_timer_white_24dp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_orientation_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:padding="18dp"
+                android:contentDescription="Image orientation"
+                android:src="@drawable/ic_stay_current_portrait_black_24dp"
+                android:tint="@color/white" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hide_reveal_button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:padding="18dp"
+                android:contentDescription="Image quick details button"
+                android:src="@drawable/ic_info_outline_white_24dp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

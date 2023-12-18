@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/widget_card_drawable"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/widget_app_name_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/spacemono_bold"
+        android:text="W O L : P E P P E R"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/subTextColor"
+        android:gravity="center"
+        android:alpha="0.2"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/widget_image_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/widget_author_name_text_view"
+            android:fontFamily="@font/spacemono_bold"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:inputType="textCapWords"
+            android:textColor="@color/textColor"
+            android:text="Some Photographer"/>
+
+        <TextView
+            android:fontFamily="@font/spacemono_regular"
+            android:id="@+id/widget_image_date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/subTextColor"
+            android:text="1 January 1970"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_vertical_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/widget_image_detail_layout"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/widget_share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:tint="@color/subTextColor"
+            android:padding="6dp"
+            android:src="@drawable/ic_share_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/widget_download_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:tint="@color/subTextColor"
+            android:padding="6dp"
+            android:src="@drawable/ic_arrow_downward_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/widget_refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:tint="@color/subTextColor"
+            android:padding="6dp"
+            android:src="@drawable/ic_refresh_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/widget_apply_wolpepper_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:tint="@color/subTextColor"
+            android:padding="6dp"
+            android:src="@drawable/ic_format_paint_white_24dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/widget_vertical_button_layout"
+        android:layout_toStartOf="@id/widget_vertical_button_layout"
+        android:layout_above="@id/widget_image_detail_layout"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/widget_wallpaper_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/widget_error_image_view"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_error_outline_white_24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/widget_progress_bar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:indeterminateDuration="2000"
+            android:indeterminateDrawable="@xml/progress"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/widget_scrim"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

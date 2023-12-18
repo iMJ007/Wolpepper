@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/crop_image_menu_flip"
+        id="@+id/navigation_flip"
+        title="New" />
+
+    <tab
+        icon="@drawable/ic_collections_white_24dp"
+        id="@+id/navigation_rotate"
+        title="Collections" />
+
+    <tab
+        icon="@drawable/ic_stars_white_24dp"
+        id="@+id/navigation_blur"
+        title="Curated" />
+
+    <tab
+        icon="@drawable/ic_dns_white_24dp"
+        id="@+id/navigation_saturation"
+        title="Categories" />
+
+    <tab
+        icon="@drawable/ic_dns_white_24dp"
+        id="@+id/navigation_brightness"
+        title="Categories" />
+
+</tabs>

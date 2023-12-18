@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fab_option_gradient_type"
+        android:icon="@drawable/ic_style_white_24dp"
+        android:title="Gradient Type" />
+
+    <item
+        android:id="@+id/fab_option_gradient_layer_count"
+        android:icon="@drawable/ic_layers_white_24dp"
+        android:title="Number Of colors"/>
+
+
+    <item
+        android:id="@+id/share_gradient_paper"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="Share Gradient Paper" />
+
+    <item
+        android:id="@+id/save_gradient_paper"
+        android:icon="@drawable/ic_file_download_white_24dp"
+        android:title="Save Gradient Paper"/>
+
+</menu>

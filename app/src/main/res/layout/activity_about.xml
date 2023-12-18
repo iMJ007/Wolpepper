@@ -1,0 +1,1079 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        tools:context="com.eclectik.orphic.Changelog">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:fontFamily="@font/spacemono_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.7"
+            android:text="@string/app_name"
+            android:textColor="#fafafa"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:fontFamily="@font/spacemono_regular"
+            android:id="@+id/about_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 2.0.9.9"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:alpha="0.3"
+            android:textColor="#fafafa"
+            android:textSize="12sp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:fontFamily="@font/spacemono_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.7"
+            android:text="@string/about_desc"
+            android:textColor="#fafafa"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.1"
+            android:background="#fafafa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/eclectik"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:alpha="0.2"
+                android:text="@string/developers_eclectik"
+                android:textColor="#fafafa"
+                android:textSize="14sp"
+                 />
+
+            <LinearLayout
+                android:id="@+id/active_dev_category"
+                android:layout_width="match_parent"
+                android:layout_below="@id/eclectik"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#fafafa"
+                    android:alpha="0.1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active developer and support"
+                    android:alpha="0.4"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#fafafa"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#fafafa"
+                    android:alpha="0.1" />
+
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/author_image_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_below="@id/active_dev_category"
+                android:src="@drawable/author_2"
+                android:layout_marginTop="12dp"
+                app:shapeAppearance="@style/circleImageView"
+                app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/id1"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/active_dev_category"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/author_image_1"
+                android:text="@string/junaid_gandhi"
+                android:textColor="#fafafa"
+                android:textSize="14sp"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id1"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/author_image_1"
+                android:alpha="0.5"
+                android:text="@string/android_java_developer"
+                android:textColor="#fafafa"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/author_google_one"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/author_image_1"
+                android:layout_toEndOf="@id/author_image_1"
+                android:layout_marginTop="8dp"
+                android:alpha="0.7"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/website"
+                android:textColor="@color/colorAccent"
+                 />
+
+            <LinearLayout
+                android:id="@+id/passive_dev_category"
+                android:layout_width="match_parent"
+                android:layout_below="@id/author_google_one"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#fafafa"
+                    android:alpha="0.1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:fontFamily="@font/spacemono_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passive member"
+                    android:alpha="0.4"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#fafafa"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#fafafa"
+                    android:alpha="0.1" />
+
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/author_image_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/passive_dev_category"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/author_1"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                android:layout_marginEnd="8dp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/id2"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passive_dev_category"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/author_image_2"
+                android:text="@string/shahid_shaikh"
+                android:textColor="#fafafa"
+                android:textSize="14sp"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id2"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/author_image_2"
+                android:alpha="0.5"
+                android:text="@string/android_developer_and_designer"
+                android:textColor="#fafafa"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/author_google_two"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_below="@id/author_image_2"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/author_image_2"
+                android:alpha="0.7"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/website"
+                android:textColor="@color/colorAccent"
+                 />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:alpha="0.1"
+            android:background="#fafafa" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/licenses_and_credits"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="Unsplash.com"
+                android:textColor="#fafafa"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/unsplash_credits_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/unsplash_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/firebase"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/firebase_credits"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/firebase_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/glide_image_library"
+                android:textColor="#fafafa" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/glide_credits"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/glide_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/circularimageview"
+                android:textColor="#fafafa" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/circular_credits"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/circular_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/roboto_slab"
+                android:textColor="#fafafa" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/ROBOTO_credits"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/roboto_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/android_image_cropper_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/android_image_cropper_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/cropper_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/alerter_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/alerter_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/alerter_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/blurry_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/blurry_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/blurry_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/fab_options_library_title"
+                android:textColor="#fafafa"
+                 />
+            
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/fab_options_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fab_options_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/tap_target_view_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/tap_target_view_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tap_target_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/photo_view_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/photo_view_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/photo_view_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/muzei_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/muzei_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/muzei_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/android_view_animation_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/android_view_animation_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/android_view_animation_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/revealator_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/revealator_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/revealator_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/bottom_bar_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/bottom_bar_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_bar_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/material_dialogs_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/material_dialogs_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/material_dialogs_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/square_loader_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/square_loader_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/square_loading_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/okhttp_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/okhttp_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/okhttp_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/diagonal_layout_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/diagonal_layout_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/diagonal_layout_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.9"
+                android:text="@string/expanding_view_library_title"
+                android:textColor="#fafafa"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:fontFamily="@font/spacemono_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:alpha="0.5"
+                android:text="@string/expanding_view_library_desc"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/expanding_layout_library_license_intent"
+                android:fontFamily="@font/spacemono_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:text="@string/link"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
